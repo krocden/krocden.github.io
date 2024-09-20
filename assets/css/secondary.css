@@ -11,14 +11,6 @@
     padding: 8px;
   }
   
-  /* Creating two equal columns for current projects section  */
-  .currentColumn {
-    float:left;
-    width: 49%;
-    margin-left: .5%;
-    margin-right: .5%;
-  }
-
   /* Creating three equal columns for Top projects section  */
   .topColumn {
     float:left;
