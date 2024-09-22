@@ -195,7 +195,7 @@ input, select, textarea {
 			width: -ms-max-content;
 			width: max-content;
 			padding-bottom: 0.5rem;
-			margin: 0 0 2rem 0;
+			margin: 0 0 1rem 0;
 		}
 
 	h1 {
@@ -1550,6 +1550,14 @@ input, select, textarea {
 			border-radius: 4px;
 			opacity: 0;
 		}
+
+			#main article#contact {
+				width: 20rem;
+			}
+
+			#main article#work {
+				width: 60rem;
+			}
 
 			#main article.active {
 				-moz-transform: translateY(0);
