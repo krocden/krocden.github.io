@@ -40,76 +40,67 @@
     text-align: center;
 }
 
-.workDesc { 
-  text-indent: 20px;
-  margin-left: 7px;
+.projDesc { 
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.currentButtonCentered {
-  margin-left: 28%;
-}
-
-.topButtonCentered {
-  display: flex;
-  justify-content: center;
-}
-
-.otherButtonCentered {
-  display: flex;
-  justify-content: center;
-}
-
-.cardImg {
+.projImg {
   width: 95%;
   max-height: 95%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3px;
+  margin-bottom: 1rem;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1200px) {
+.githubButton {
+  display: flex;
+  justify-content: center;
+}
 
-  .currentButtonCentered, .topButtonCentered, .otherButtonCentered{
+/* Responsive layout */
+@media screen and (max-width: 1200px) {
+  .miscProj {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+  .githubButton {
     display: flex;
-      flex-direction: column;  
-      justify-content: space-evenly; 
-      
+    flex-direction: column;  
+    justify-content: space-evenly; 
   }
 
 }
 @media screen and (max-width: 900px) {
-  .currentColumn, .topColumn, .otherColumn {
-    width: 50%;
-   }
-  .currentButtonCentered, .topButtonCentered, .otherButtonCentered{
-    display: flex;
-      flex-direction: column;  
-      justify-content: space-evenly; 
-      
+  .miscProj {
+    width: 100%;
+    margin-bottom: 1rem;
   }
-  .portfoliop { 
+  .githubButton {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-evenly; 
+  }
+  .projDesc { 
     text-indent: 10px;
     margin-left: 5px;
   }
-}
-  
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+}  
 @media screen and (max-width: 600px) {
-  .currentColumn, .topColumn, .otherColumn {
+  .miscProj {
     width: 100%;
-    }
-  .rHeader {
+  }
+  .responsiveHeader {
     font-size: 80%;
   }
-  .currentButtonCentered, .topButtonCentered, .otherButtonCentered{
+  .githubButton {
     display: flex;
     flex-direction: column;  
     justify-content: space-evenly;  
-      
   }
-  .portfoliop { 
+  .projDesc { 
     text-indent: 10px;
     margin-left: 5px;
   }
